@@ -2,8 +2,9 @@
   "name": "url-shortener",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,6 +14,12 @@
   "author": "Benaiah Yusuf",
   "license": "MIT",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
   }
 }
