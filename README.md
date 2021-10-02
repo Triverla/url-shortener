@@ -1,4 +1,4 @@
-# url-shortener
+# url-shortener API
 
 Endpoint: `` POST {{URL}}/api/url/shorten ``
 
