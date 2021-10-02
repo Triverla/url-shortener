@@ -1,10 +1,5 @@
 require("dotenv").config();
 
-var config = {};
-
-config.use_env_variable =
-  process.env.NODE_ENV === "development" ? "development" : "production";
-
 module.exports = {
   development: {
     username: process.env.DB_USERNAME,
@@ -27,8 +22,6 @@ module.exports = {
     host: "127.0.0.1",
     dialect: "mysql",
   },
+  port: process.env.PORT
 };
 
-config.port = process.env.PORT;
-
-module.exports = config;
